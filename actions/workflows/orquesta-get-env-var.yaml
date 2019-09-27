@@ -1,0 +1,28 @@
+version: 1.0
+
+description: Testing getting env vars
+
+vars:
+  - env_vars: null
+
+output:
+  - env_vars: <% ctx().env_vars %>
+
+tasks:
+
+  get_environmental_variables:
+    action: core.local cmd=<% ctx(env) %>
+    next:
+      - when: <% succeeded() %>
+        publish:
+          - env_vars: <% result().stdout %>
+        do: print_environmental_variables
+
+  print_environmental_variables:
+    action: core.echo message=<% ctx().env_vars %>
+    next:
+      - when: <% succeeded() %>
+        publish: 
+          - stdout: <% result().stdout %>
+          - stderr: <% result().stderr %>
+

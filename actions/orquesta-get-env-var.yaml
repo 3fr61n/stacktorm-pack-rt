@@ -1,0 +1,7 @@
+---
+name: orquesta-get-env-vars
+pack: rt
+description: A basic sequential workflow for getting environmental vars
+runner_type: orquesta
+entry_point: workflows/orquesta-get-env-var.yaml
+enabled: true

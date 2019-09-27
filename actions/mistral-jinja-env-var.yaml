@@ -3,5 +3,5 @@ description: Example to return workflow's environment variable
 enabled: true
 entry_point: workflows/mistral-jinja-env-var.yaml
 name: mistral-jinja-env-var
-pack: stacktorm-pack-rt 
+pack: rt
 runner_type: mistral-v2

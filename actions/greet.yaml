@@ -1,6 +1,6 @@
 ---
 name: greet
-pack: stacktorm-pack-rt
+pack: rt
 runner_type: "local-shell-script"
 description: Greet StackStorm!
 enabled: true

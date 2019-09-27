@@ -1,6 +1,6 @@
 ---
 name: rt-create-ticket
-pack: stacktorm-pack-rt
+pack: rt
 runner_type: "python-script"
 description: Create a ticket in RT
 enabled: true

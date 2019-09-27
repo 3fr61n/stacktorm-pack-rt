@@ -11,7 +11,7 @@ output:
 tasks:
 
   get_environmental_variables:
-    action: core.local cmd=<% ctx(env) %>
+    action: core.local cmd=env
     next:
       - when: <% succeeded() %>
         publish:

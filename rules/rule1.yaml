@@ -1,0 +1,11 @@
+---
+name: on_hello_event1
+pack: stacktorm-pack-rt
+description: Sample rule firing on rt.event1.
+enabled: true
+trigger:
+    type: stacktorm-pack-rt.event1
+action:
+    ref: stacktorm-pack-rt.greet
+    parameters:
+        greeting: Yo

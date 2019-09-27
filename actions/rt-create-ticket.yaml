@@ -1,0 +1,18 @@
+---
+name: rt-create-ticket
+pack: stacktorm-pack-rt
+runner_type: "python-script"
+description: Create a ticket in RT
+enabled: true
+entry_point: rt-create-ticket.py
+parameters:
+    queue:
+        type: "string"
+        description: "Ticket's queue"
+        required: true
+        position: 0
+    subject:
+        type: "string"
+        description: "Ticket's subject"
+        required: true
+        position: 1 

@@ -1,0 +1,7 @@
+---
+name: greet
+pack: stacktorm-pack-rt
+description: "Greet StackStorm"
+action_ref: "stacktorm-pack-rt.greet"
+formats:
+  - "greet {{greeting}}"
